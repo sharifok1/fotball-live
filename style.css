@@ -101,7 +101,8 @@ nav{
 .img-animation{
     position: relative;
     height:448px;
-    width: 556px;    
+    width: 556px; 
+    transition: 2s;
 }
 .img-animation img{
     height: 448px;
@@ -116,10 +117,10 @@ nav{
     display: none;
     transition: 2s;
 }
-.img-animation:hover .messi{
+.top-banner:hover .messi{
     display: block;
 }
-.img-animation:hover .naymer{
+.top-banner:hover .naymer{
     display: none;
 }
 /* ===main section css style 
@@ -337,4 +338,123 @@ i{
     margin-top: 20px;
     font-size:20px;
 }
-    
+
+/*=================== media quary''''''''''------------______________
+==================================================================== */
+@media only screen and (max-width:678px){
+/* manubar
+================ */
+    .top-banner{
+        position: relative;
+        background-color:lightseagreen;
+        height:auto;
+        width:700px;
+        
+         }
+    .manubar{
+        display: flex;
+        flex-direction: column;
+        padding-top: 42px;
+        width:auto;
+    }
+    .left ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .left ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .left ul li a{
+        text-align: center;
+        padding-top: 5px;
+        font-size: 20px;
+    }
+    .right{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 55px;
+    }
+    /* header
+    =====================*/
+    .bannar-img{
+        display: flex;
+        justify-content:center;
+    }
+    .text{
+        margin-right:102px;
+        margin-top: 121px;
+        height:230px ;
+        width:485px ;
+    }
+    .text h1{
+        color:#fff;
+        margin-top: -80px;
+        font-size: 36px;
+        margin-left: -50px;
+    }
+    .score-button{
+        width:168px;
+        height: 44px;
+       background-color:#E02C6D;
+       margin-top: -50px;
+       margin-left: -50px;
+    }
+    .score-button a{
+        color:#fff;
+        font-weight:500;
+        font-size: 16px;
+    }
+    /* bannar img quary
+    ====================== */
+    .bannar-img{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        transition: 2s;
+    }
+    .img-animation{
+        width: auto;
+        margin-left: -100px;
+        display: inline-block;
+        margin-bottom:100px ;
+    }
+    .img-animation img{
+        transition: 2s;
+    }
+/* main part 
+=================*/
+main{
+    display: flex;
+    justify-content: center;
+    width:700px;
+}
+.player-album{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.player-freme{
+    height: 674px;
+    width:550px;
+    box-shadow: 0 0 15px 5px rgb(187, 181, 181);
+    }
+.player{
+    padding:20px 20px;
+    width: 530px;
+}
+.player img{
+    height:470px;
+    width:500px;
+}
+.player h1{
+    font-size: 30px;
+}
+.player p{
+    font-size: 18px;
+    width: 500px;
+}
+
+}
